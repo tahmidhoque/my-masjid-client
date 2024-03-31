@@ -1,43 +1,90 @@
 {
-  "name": "my-masjid-client",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.91",
-    "@types/react": "^18.2.67",
-    "@types/react-dom": "^18.2.22",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "my-masjid-client",
+	"version": "0.1.0",
+	"main": "main.js",
+	"private": true,
+	"dependencies": {
+		"@emotion/react": "^11.11.4",
+		"@emotion/styled": "^11.11.0",
+		"@mui/icons-material": "^5.15.13",
+		"@mui/material": "^5.15.13",
+		"@mui/x-data-grid": "^6.19.6",
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@tiptap/core": "^2.2.4",
+		"@tiptap/extension-color": "^2.2.4",
+		"@tiptap/extension-heading": "^2.2.4",
+		"@tiptap/extension-image": "^2.2.4",
+		"@tiptap/extension-table": "^2.2.4",
+		"@tiptap/extension-text-align": "^2.2.4",
+		"@tiptap/pm": "^2.2.4",
+		"@tiptap/react": "^2.2.4",
+		"@tiptap/starter-kit": "^2.0.0-beta.189",
+		"@types/jest": "^27.5.2",
+		"@types/node": "^16.18.91",
+		"@types/react": "^18.2.67",
+		"@types/react-dom": "^18.2.22",
+		"dompurify": "^3.0.9",
+		"electron": "^29.1.5",
+		"electron-builder": "^24.13.3",
+		"electron-is-dev": "^3.0.1",
+		"electron-router-dom": "^1.0.5",
+		"framer-motion": "^11.0.14",
+		"moment": "^2.30.1",
+		"mui-tiptap": "^1.8.6",
+		"mysql": "^2.18.1",
+		"mysql2": "^3.9.2",
+		"nanoid": "^3.3.7",
+		"papaparse": "^5.4.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-fast-marquee": "^1.6.4",
+		"react-papaparse": "^4.4.0",
+		"react-router-dom": "^6.22.0",
+		"react-scripts": "5.0.1",
+		"react-uuid": "^2.0.0",
+		"typescript": "^4.9.5",
+		"url": "^0.11.3",
+		"web-vitals": "^2.1.4"
+	},
+	"scripts": {
+		"start": "webpack-dev-server --mode development",
+		"build": "webpack --mode production",
+		"electron-start": "electron ."
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/dompurify": "^3.0.5",
+		"@types/mysql": "^2.15.26",
+		"@types/node": "^20.11.28",
+		"@types/papaparse": "^5.3.14",
+		"@types/webpack": "^5.28.5",
+		"@types/webpack-dev-server": "^4.7.2",
+		"css-loader": "^6.10.0",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^5.6.0",
+		"ts-loader": "^9.5.1",
+		"webpack": "^5.91.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.2"
+	},
+	"homepage": "./"
 }

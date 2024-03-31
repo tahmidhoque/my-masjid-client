@@ -1,0 +1,14 @@
+.MuiTiptap-RichTextContent-editable {
+	height: inherit;
+	background-color: white;
+}
+
+.MuiTiptap-FieldContainer-root {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.MuiTiptap-RichTextField-content {
+	flex-grow: 1;
+}
