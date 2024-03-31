@@ -52,7 +52,8 @@ ipcMain.handle("getScreenKey", (event, args) => {
 });
 
 ipcMain.handle("setPaired", (event, args) => {
-	store.set("paired", args);
+	console.log("args: ", args);
+	return store.set("paired", args.paired);
 });
 
 ipcMain.handle("getPaired", (event, args) => {

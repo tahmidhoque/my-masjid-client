@@ -21,7 +21,7 @@ declare global {
 		api: {
 			getScreenKey: () => Promise<string>;
 			getPaired: () => Promise<boolean>;
-			setPaired: (paired: boolean) => Promise<void>;
+			setPaired: (args: {}) => Promise<void>;
 		};
 	}
 }

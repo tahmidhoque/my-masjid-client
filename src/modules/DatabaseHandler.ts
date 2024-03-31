@@ -82,6 +82,14 @@ class DatabaseHandler {
 
 		return response.json();
 	}
+
+	public async getScreenInfo(screenKey: string): Promise<any> {
+		const response = await fetch(
+			`https://masjidsolutions.com/ms/api/getScreenData/${screenKey}`
+		);
+
+		return response.json();
+	}
 }
 
 export default DatabaseHandler;
